@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Task",
+    "\\Task\\bin",
+    "\\Task\\Models"
   ],
+  "SelectedNode": "\\Task\\Controllers",
   "PreviewInSolutionExplorer": false
 }
