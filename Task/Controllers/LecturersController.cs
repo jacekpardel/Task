@@ -2,7 +2,7 @@
 
 namespace IS_Task.Controllers
 {
-    public class LecturerController : Controller
+    public class LecturersController : Controller
     {
         public IActionResult Index()
         {
