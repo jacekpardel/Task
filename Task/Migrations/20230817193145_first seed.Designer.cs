@@ -3,6 +3,7 @@ using IS_Task.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IS_Task.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230817193145_first seed")]
+    partial class firstseed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,35 +40,13 @@ namespace IS_Task.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Lecturers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Email = "jan@poczta.pl",
-                            Name = "Jan",
-                            Phone = 55554
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Email = "piotr@poczta.pl",
-                            Name = "Piotr",
-                            Phone = 54332
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Email = "maciek@poczta.pl",
-                            Name = "Maciej",
-                            Phone = 53454
-                        });
                 });
 #pragma warning restore 612, 618
         }
