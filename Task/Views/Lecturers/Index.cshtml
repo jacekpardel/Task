@@ -1,1 +1,36 @@
-﻿<h1>Lecurers List</h1>
+﻿@model List<LecturerModel>
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text primary">Lecturers list</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Lecturers" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> Add new lectutrer
+            </a>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>
+                Lecturer Name
+            </th>
+            <th>
+                Lecturer e-mail
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model.OrderBy(u => u.Name))
+            {
+                <tr>
+                    <td> @obj.Name </td>
+                    <td> @obj.Email </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
