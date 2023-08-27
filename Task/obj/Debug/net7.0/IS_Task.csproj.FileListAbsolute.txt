@@ -73,3 +73,12 @@ C:\Users\jacek_p\source\repos\Task\Task\obj\Debug\net7.0\refint\IS_Task.dll
 C:\Users\jacek_p\source\repos\Task\Task\obj\Debug\net7.0\IS_Task.pdb
 C:\Users\jacek_p\source\repos\Task\Task\obj\Debug\net7.0\IS_Task.genruntimeconfig.cache
 C:\Users\jacek_p\source\repos\Task\Task\obj\Debug\net7.0\ref\IS_Task.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Users\jacek_p\source\repos\Task\Task\bin\Debug\net7.0\Serilog.Sinks.File.dll
